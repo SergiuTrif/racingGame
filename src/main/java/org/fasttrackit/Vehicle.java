@@ -20,12 +20,12 @@ public class Vehicle {
 //        traveledDistance += distance;
 
         double usedFuel = distance * mileage / 100;
-
         System.out.println("Used fuel: " + usedFuel);
-
         fuelLevel -= usedFuel;
-
         System.out.println("Remaining fuel: " + fuelLevel);
+
+
+
 
 
         return 10.6;

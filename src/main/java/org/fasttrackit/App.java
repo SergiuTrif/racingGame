@@ -2,6 +2,8 @@ package org.fasttrackit;
 
 import org.xml.sax.ext.Locator2;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -53,6 +55,16 @@ public class App
         System.out.println("Car1 name: " + car.name);
 
         car = car2;
+
+        System.out.println("Modulo examples");
+        System.out.println(4 & 2);
+        System.out.println(4 & 3);
+
+        System.out.println("Please enter some text");
+        Scanner scanner = new Scanner(System.in);
+        String text = scanner.nextLine();
+
+        System.out.println("Input from user: " + text);
 
     }
 }
