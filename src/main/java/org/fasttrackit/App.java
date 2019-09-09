@@ -86,12 +86,18 @@ public class App
 
 
 
-        HybridCar hybridCar = new HybridCar();
+        Vehicle hybridCar = new HybridCar();
         hybridCar.setName("cheater");
 
+        // method implementation from object's class not from variable's class
         hybridCar.accelerate(60, 1 );
+
         System.out.println("Fuel level: " + hybridCar.getFuelLevel());
         System.out.println("Traveled distance: " + hybridCar.getTraveledDistance());
+
+        //  variable type decides what methods can be invoked
+        //  type casting
+        ((HybridCar) hybridCar).fly();
 
 
     }

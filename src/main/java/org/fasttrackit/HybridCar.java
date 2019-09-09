@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import org.jcp.xml.dsig.internal.dom.DOMSubTreeData;
+
 //overriding
 //not overwriting
 public class HybridCar extends Vehicle {
@@ -9,6 +11,10 @@ public class HybridCar extends Vehicle {
     @Override
     protected HybridCar clone() throws CloneNotSupportedException {
         return new HybridCar();
+    }
+
+    public void fly() {
+        System.out.println("Yeeey");
     }
 
     @Override
