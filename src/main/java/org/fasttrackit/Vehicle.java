@@ -20,7 +20,7 @@ public class Vehicle {
         return accelerate(speed, 1);
     }
 
-    public double accelerate(double speed, double durationInHours) {
+    public double accelerate (double speed, double durationInHours) {
         if (speed > maxSpeed) {
             System.out.println("Maximum speed exceed.");
             return 0;
